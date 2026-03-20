@@ -19,7 +19,7 @@
     |   │   │	  │   ├── optimization.py                  
     |   │   │   ├── database.db             
     |   │   │   ├── main.py                  
-    |   │   ├── frontend/                	# Пользовательская часть
+    |   │   ├── frontend/                	     # Пользовательская часть
     |   │   │   ├── css/
     |   │   │	  │   ├── styles.css   
     |   │   │   ├── js/
