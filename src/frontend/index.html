@@ -12,10 +12,6 @@
 <body>
     <div class="map-wrapper">
         <div id="map"></div>
-
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-        <script src="./js/map.js"></script>    
     </div>
 
     <div class="container">
@@ -24,7 +20,7 @@
 
             <div class="field">
                 <label>Число точек</label>
-                <input type="text" value="5">
+                <input type="text" id="pointsInput" placeholder="5">
             </div>
 
             <div class="field multi">
@@ -33,21 +29,19 @@
                 <div class="coords">
                     <div class="coord-row">
                         <span>W</span>
-                        <input type="text" value="20.22">
-                        <span>°</span>
+                        <input type="text" id="westInput" placeholder="20.22">
                     </div>
 
                     <div class="coord-row">
                         <span>N</span>
-                        <input type="text" value="20.22">
-                        <span>°</span>
+                        <input type="text" id="northInput" placeholder="20.22">
                     </div>
                 </div>
             </div>
 
             <div class="field">
                 <label>Радиус поиска (км)</label>
-                <input type="text" value="50">
+                <input type="text" id="radInput" placeholder="50">
             </div>
 
             <div class="toggle">
@@ -55,7 +49,7 @@
                 <div class="switch"></div>
             </div>
 
-            <button>Сгенерировать точки</button>
+            <button onclick="extractText()">Сгенерировать точки</button>
         </div>
 
         <div class="card small">
@@ -65,15 +59,17 @@
 
         <div class="card small green">
             <button>Оптимизировать маршрут</button>
-            <p>40 км &nbsp;&nbsp; 50 мин</p>
-
-            <div class="improve">
-                <span>-15 км</span>
-                <span>-15 мин</span>
-            </div>
+            <p>15 км &nbsp;&nbsp; 15 мин</p>
         </div>
 
     </div>
 
+    <div class="improvement">
+        <span>-15 км &nbsp;&nbsp; -15 мин</span>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./js/map.js"></script>  
+    <script type="module" src="./js/app.js"></script>
 </body>
 </html>

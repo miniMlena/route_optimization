@@ -24,8 +24,18 @@ body {
     text-align: center;
 }
 
-.card.green {
+.improvement {
+    position: absolute;
+    right: 65px;
+    top: 606px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     background: #E2E4FF;
+    padding: 15px;
+    border-radius: 12px;
+    color: #7bca8d
 }
 
 h3 {
@@ -85,15 +95,8 @@ button {
     background: #8fd19e;
 }
 
-p {
+.card.green p {
     margin: 10px 0 0;
-}
-
-.improve {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    color: green;
 }
 
 .field {

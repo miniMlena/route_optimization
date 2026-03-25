@@ -1,6 +1,6 @@
 const API_BASE_URL = "http://localhost:8000/api";
 
-class ApiClient {
+export class ApiClient {
     constructor(baseUrl = API_BASE_URL) {
         this.baseUrl = baseUrl;
     }
@@ -84,3 +84,4 @@ class ApiClient {
 
 // Глобальный экземпляр клиента
 const api = new ApiClient();
+export default api;
