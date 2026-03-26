@@ -7,3 +7,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 window.generatedPoints = [];
 window.markers = [];
+
+window.addEventListener('resize', function() {
+    window.map.invalidateSize();
+});
